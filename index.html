@@ -15,6 +15,7 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 
 
 
@@ -22,24 +23,32 @@
 
 <body>
     <!-- Navbar-->
-    <nav>
+    <nav class="black">
+        <div class="nav-wrapper black-text">
+            <a href="index.html" class="brand-logo responsive-img"><img class="responsive-img" id="logo" src="images/Picture1.png" /></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down blue-text">
+                <li class="black-text"><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <!-- <nav>
         <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#!" class="brand-logo responsive-img" id="logo"></a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#about">About</a></li>
-                <li><a href="badges.html">Projects</a></li>
-
+                <li><a href="#projects">Projects</a></li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
 
     <ul class="sidenav" id="mobile-demo">
         <li> <a href=""></a></li>
-        <li><a href="sass.html">About</a></li>
-        <li><a href="badges.html">Projects</a></li>
-
-
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
 
     </ul>
 
@@ -47,47 +56,31 @@
     <div class="container">
         <div class="about" id="about">
             <h1> Hello World, I am Neil. </h1>
+            <h4> You can either find me on the court taking ankles or knees deep in hacking together my next project.</h4>
         </div>
-        <div class="projects">
+        <div class="projects" id="projects">
             <h2 class="center-align"> Projects</h2>
+
             <div class="row">
-                <div class="col s4">
-                    <h3> Coming Soon</h3>
-                    <h5> Tech: Vanilla JS
-                    </h5>
-                </div>
-                <div class="col s4">
-                    <h3> Coming Soon</h3>
-                    <h5> Tech: Vanilla JS
-                    </h5>
-                </div>
-                <div class="col s4">
-                    <h3> Coming Soon</h3>
-                    <h5> Tech: Vanilla JS
-                    </h5>
-                </div>
-                <div class="col s4">
-                    <h3> Coming Soon</h3>
-                    <h5> Tech: Vanilla JS
-                    </h5>
-                </div>
-                <div class="col s4">
-                    <h3> Coming Soon</h3>
-                    <h5> Tech: Vanilla JS
-                    </h5>
-                </div>
-                <div class="col s4">
-                    <h3> Coming Soon</h3>
-                    <h5> Tech: Vanilla JS
-                    </h5>
+                <div class="col s12 m4">
+                    <div class="card" id="test1">
+                        <img class=" responsive-img image" src="images/Picture1.png" />
+                        <div class="card-content blue-text">
+                            <p>Simple App</p>
+                        </div>
+                        <div class="middle">
+                            <div class="text"> App 1</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
 
     <!-- Footer-->
 
-    <footer class="page-footer">
+    <footer class="page-footer blue darken-2">
         <div class="footer-copyright">
             <div class="container">
                 © 2018 Copyright Neil Williams
@@ -95,9 +88,16 @@
         </div>
 
     </footer>
-
-
-
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red darken-2">
+            <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red"><i class="material-icons">code</i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="material-icons">people</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">book</i></a></li>
+        </ul>
+    </div>
 
 
     <script type=" text/javascript" src="js/materialize.min.js">
